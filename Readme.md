@@ -456,47 +456,22 @@ with open('output/model_int8.tflite', 'wb') as f:
 ##  Project Structure
 
 ```
-gait-trajectory-prediction/
+On-Device-Gait-Prediction-for-Embedded-Wearables/
 │
-├── .conda-env/                    # Conda environment cache
 │
-├── data/
-│   ├── dataset_v2/                # HuGaDB extracted files (364 CSVs)
-│   │   ├── subject01_walk01.csv
-│   │   ├── subject01_walk02.csv
-│   │   └── ...
 │   └── fetch_dataset.py           # Dataset download script
 │
-├── output/                        # Training outputs
-│   ├── models/                    # Saved Keras models (.h5)
-│   │   ├── mlp_cls_32-16.h5
-│   │   ├── dscnn_cls_b16_res.h5
-│   │   └── ...
-│   ├── tflite/                    # Converted TFLite models
-│   │   ├── mlp_cls_32-16_int8.tflite      ✅ Deployed model
-│   │   ├── dscnn_cls_b16_res_int8.tflite
-│   │   └── ...
-│   └── logs/                      # Training logs and metrics
-│
-├── notebooks/
 │   └── project1.ipynb             # Main Jupyter notebook
 │
-├── src/
 │   └── hugadb_v2_pipeline.py      # Data processing utilities
 │
-├── arduino/                       # (Optional) Arduino deployment code
+├── arduino/                       # Arduino deployment code
 │   ├── gait_prediction.ino
 │   └── model_data.cc
-│
-├── docs/                          # Additional documentation
-│   ├── model_architecture.png
-│   └── results_analysis.md
 │
 ├── environment.yml                # Conda environment spec
 ├── requirements.txt               # Pip requirements
 ├── README.md                      # This file
-├── LICENSE                        # License information
-└── .gitignore                     # Git ignore rules
 ```
 
 ---
