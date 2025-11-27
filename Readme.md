@@ -1,4 +1,4 @@
-#On-Device-Gait-Prediction-for-Embedded-Wearables
+# On-Device-Gait-Prediction-for-Embedded-Wearables
 
 ## Table of Contents
 
