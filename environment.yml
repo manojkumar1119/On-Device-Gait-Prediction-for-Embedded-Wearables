@@ -1,0 +1,16 @@
+channels:
+  - pytorch
+  - conda-forge
+  - nvidia
+  - defaults
+dependencies:
+  - matplotlib
+  - pyserial
+  - tensorflow
+  - numpy
+  - pandas
+  - python=3.12
+  - scikit-learn
+  - gdown
+  - ipykernel
+  - scipy
