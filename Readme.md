@@ -463,12 +463,13 @@ On-Device-Gait-Prediction-for-Embedded-Wearables/
 │
 ├── hugadb_v2_pipeline.py      # Data processing utilities
 │
-├── arduino/                       # Arduino deployment code
-│   ├── gait_prediction.ino
-│   └── model_data.cc
+|# Arduino deployment code
+├── GaitPrediction.ino
+├── model.cpp
+├── model.h
+├── Hardware_test.py
 ├── environment.yml                # Conda environment spec
-├── requirements.txt               # Pip requirements
-├── README.md                      # This file
+
 ```
 
 ---
