@@ -350,7 +350,7 @@ MLP Model:
 ✅ Fastest inference (~2 ms)
 ✅ Lowest power draw
 ✅ Still high accuracy (90.88%)
-✓ Best for production deployment
+✅ Best for production deployment
 ```
 
 **Conclusion**: The MLP model provides the optimal balance for embedded deployment where resource constraints are paramount.
