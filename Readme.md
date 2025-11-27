@@ -457,18 +457,15 @@ with open('output/model_int8.tflite', 'wb') as f:
 
 ```
 On-Device-Gait-Prediction-for-Embedded-Wearables/
+├── fetch_dataset.py           # Dataset download script
 │
+├── project1.ipynb             # Main Jupyter notebook
 │
-│   └── fetch_dataset.py           # Dataset download script
-│
-│   └── project1.ipynb             # Main Jupyter notebook
-│
-│   └── hugadb_v2_pipeline.py      # Data processing utilities
+├── hugadb_v2_pipeline.py      # Data processing utilities
 │
 ├── arduino/                       # Arduino deployment code
 │   ├── gait_prediction.ino
 │   └── model_data.cc
-│
 ├── environment.yml                # Conda environment spec
 ├── requirements.txt               # Pip requirements
 ├── README.md                      # This file
