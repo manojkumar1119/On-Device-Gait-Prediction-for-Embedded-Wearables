@@ -1,4 +1,4 @@
-# ENEE719D Project-1: On-Device-Gait-Prediction-for-Embedded-Wearables
+#On-Device-Gait-Prediction-for-Embedded-Wearables
 
 ## Table of Contents
 
@@ -15,14 +15,10 @@
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technical Specifications](#technical-specifications)
-- [Troubleshooting](#troubleshooting)
 - [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-
 ---
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates the feasibility of deploying sophisticated machine learning models for **real-time human gait trajectory prediction** on resource-constrained embedded microcontrollers. By leveraging **TensorFlow Lite (TFLite)** with **INT8 quantization**, we achieve high-accuracy biomechanical forecasting with minimal latency and memory footprint, making it suitable for edge devices like the **Arduino Nano BLE Sense**.
 
@@ -55,7 +51,7 @@ Optimized neural network architecture was trained on the **HuGaDB (Human Gait Da
 
 - **Python**: 3.8 or higher
 - **Conda**: For environment management
-- **Arduino IDE**: (Optional) For microcontroller deployment
+- **Arduino IDE**:For microcontroller deployment
 
 ### Step 1: Create Conda Environment
 
@@ -456,24 +452,6 @@ tflite_model = pipeline.convert_to_tflite_int8(model, X_train)
 with open('output/model_int8.tflite', 'wb') as f:
     f.write(tflite_model)
 ```
-
-### Evaluating Models
-
-```python
-# Load TFLite model
-interpreter = tf.lite.Interpreter(model_path='output/mlp_cls_32-16_int8.tflite')
-interpreter.allocate_tensors()
-
-# Run inference
-input_details = interpreter.get_input_details()
-output_details = interpreter.get_output_details()
-
-interpreter.set_tensor(input_details[0]['index'], input_data)
-interpreter.invoke()
-predictions = interpreter.get_tensor(output_details[0]['index'])
-```
-
----
 
 ##  Project Structure
 
